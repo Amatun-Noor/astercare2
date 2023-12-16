@@ -496,12 +496,207 @@
   
 }
 
+
+/*location*/
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.SERVICES .img {
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+#SERVICES .SERVICES
+{
+  padding-top: 0px;
+}
+.SERVICES .img img {
+  transition: 0.6s;
+}
+
+.SERVICES .details {
+  padding: 50px 30px;
+  margin: -100px 30px 0 30px;
+  transition: all ease-in-out 0.3s;
+  background: var(--color-white);
+  position: relative;
+  background: rgba(var(--color-white-rgb), 0.9);
+  text-align: start;
+  border-radius: 0px;
+  box-shadow: 0px 0 25px rgba(var(--color-black-rgb), 0.1);
+}
+
+.SERVICES .details .icon {
+  margin: 0;
+  width: 72px;
+  height: 72px;
+  background: var(--color-primary);
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: var(--color-white);
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+  position: absolute;
+  top: -36px;
+  left: calc(50% - 36px);
+  border: 6px solid var(--color-white);
+}
+
+.SERVICES .details h3 {
+  color: var(--color-default);
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+  transition: ease-in-out 0.3s;
+}
+
+.SERVICES .details p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.SERVICES .SERVICES-item:hover .details h3 {
+  color: var(--color-primary);
+}
+
+.services .SERVICES-item:hover .details .icon {
+  background: var(--color-white);
+  border: 2px solid var(--color-primary);
+}
+
+.SERVICES .SERVICES-item:hover .details .icon i {
+  color: var(--color-primary);
+}
+
+.SERVICES .SERVICES-item:hover .img img {
+  transform: scale(1.2);
+}
+.section-header {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+
+.section-header h2 {
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: var(--color-secondary);
+}
+
+.section-header p {
+  margin: 0 auto;
+  color:#0c6e4f;
+}
+
+.header-image img,
+.center-image img {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto; /* This centers the images horizontally */
+}
+
+
+        .CONTAIN {
+            width: 80%;
+            max-width: 800px;
+            max-height: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: start;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            transition: flex-direction 0.5s;
+        }
+
+        .CONTAIN .IMG {
+            max-width: 50%;
+            display: block;
+       
+        }
+
+        .CONTAIN p {
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+          .CONTAIN {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .CONTAIN .IMG {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+    .header-image img,
+    .center-image img {
+        max-width: 50%; /* Adjust the max-width as per your preference */
+    }
+    .center-image img{
+      max-width: 15%;
+    }
+}
+
+
+#SERVICES .btn-menu
+{
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #1b1b1b;
+  border: 2px solid #0c6e4f;
+}
+
+
+#SERVICES .btn-get-started:hover {
+  background: #d07600;
+  color: white;
+  
+}
+
+#SERVICES .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 10px;
+  text-transform: none;
+  background-color: #ee8700;
+  color: white;
+  top:50%;
+  left: 50%;
+}
+
   </style>
 </head>
 
 <body>
 
   <!-- ======= Top Bar ======= -->
+  <!--
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
@@ -515,7 +710,7 @@
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
       </div>
     </div>
-  </section>
+  </section>-->
 
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
@@ -537,10 +732,6 @@
           <li><a class="nav-link scrollto" href="#services">Gallery</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Reviews</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
-          <li> <a href="#about" class="btn-get-started">Book A Tour</a>
-          </li>
-
-
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -553,7 +744,11 @@
     <div class="hero-container" data-aos="fade-up">
       <h1>Care with Love</h1>
       <h2>Compassionate care for life and need based caregiving that feel like home</h2>
-      <a href="#about" class="btn-get-started scrollto">Book A Tour</a>
+
+      <div class="btns" style="margin-top: 0px;">
+        <a href="#" class="btn-get-started ">Book A Tour</a>
+        <a href="#" class="btn-get-started "><i class="bi bi-telephone-fill d-flex align-items-center"><span>  306-881-7322</span></i></a>
+      </div>
 
     </div>
   </section><!-- End Hero -->
@@ -572,7 +767,7 @@
           <h2>ASTER CARE HOME INC</h2>
           <h3>Where Quality of <span>Living Counts!</span></h3>
           <p>Aster Care Home is custom designed to offer seniors the warm feeling of being at home. We strive to create a flexible, homelike atmosphere of love and compassion that meets individualized care needs. We treat our residents like Family and care for them as we would our own.
-
+<br><br>
             We’ll go the extra mile to make your living safe & comfortable. We serve our senior residents with compassion and respect, so the families can relax with peace of mind.</p>
         </div>
       </div>
@@ -595,23 +790,28 @@
       <div class="container">
 
         <div class="row gy-4 align-items-stretch justify-content-between features-item ">
-
+          <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+            <img src="assets/img/images/about.jpg" class="img-fluid" alt="">
+          </div>
 
           <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
-            <div class="section-title" data-aos="zoom-in" style="text-align: start;">
+            <div class="section-title" data-aos="zoom-in" style="text-align: center;">
               <h2 style="padding-left:  0px;">About Us</h2>
               <h3>Who Are <span>We</span></h3>
             
             </div>
-            <p>Aster Care home is a licensed personal care home for seniors where comfort mingles with affordable budget. It is more than just a place to live. Our residents truly become part of our family. We always provide need base personalized care to our elderly citizen by treating them as if they were our own family. We know everyone’s needs are different, so our care plans are uniquely tailored to each individual.
+            <p>
+              Aster Care home is a licensed personal care home for seniors where comfort mingles with affordable budget. We always provide
 
-              We emphasis on combined team effort. The team comprises management, our staff and most importantly the family of our resident. We are dedicated to provide the highest quality senior care with dignity, compassion and peace of mind for their families. We’re not just any place to live; we’re the perfect place to call home!</p>
+need base personalized care to our elderly citizen by treating them as if they were our own family.<br><br>
 
-          </div>
+We are dedicated to provide the highest quality senior care with dignity, compassion and peace of mind for their
 
-          <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-            <img src="assets/img/images/about.jpg" class="img-fluid" alt="">
-          </div>
+families. We’re not just any place to live; we’re the perfect place to call home!
+            </p>
+            </div>
+
+
         </div><!-- Features Item -->
 
       </div>
@@ -635,16 +835,10 @@
           <div class="section-title" data-aos="zoom-in">
             <h2 >WHAT WE OFFER</h2>
             <h3>Aster Care <span>Services</span></h3>
-            <p>Each resident has different needs and requires different levels of care. We do a comprehensive evaluation of
-              each resident and follow a personalized care plan based upon their needs.
-            
-              Our caregivers devote the time and attention to get to know each resident’s habits, hobbies, personalities, daily
-              routines, and favorite foods. In many cases, our staffs truly become our residents’ extended family. We recognize the
-              role and input of family members and work with them closely in managing each resident’s health and well-being.
-            
-              Our Care Team undergoes extensive training to ensure that they can effectively carry out their duties and
-              responsibilities. However, experience and training are not enough to be a part of our Care Team. We look for people
-              that have a passion for caregiving.
+            <p> Each resident has different needs and requires different levels of care. We do a comprehensive evaluation of
+
+              each resident and follow a personalized care plan based upon their needs.<br><br>
+              
               We offer a wide range of resident-focused services to meet your need.</p>
           </div>
 
@@ -714,7 +908,7 @@
       </div>
 
       <div class="center-container  mt-4 "  data-aos="zoom-in">
-        <a href="#about" class="btn-get-started scrollto">Learn More About Services</a>
+        <a href="#" class="btn-get-started scrollto">Learn More About Services</a>
     </div>
 
     </section><!-- End Values Section -->
@@ -727,14 +921,20 @@
       <div class="container" data-aos="zoom-in">
 
         <div class="row row-eq-height justify-content-center" data-aos="zoom-in" style="margin: 0px;">
-          <div class="col-lg-8 mb-4  mt-3" style="text-align: center; background-color:#ffe45c;  border-radius: 20px;">
-              <h3 style="border-style: dashed;
-              border-width: 5px; border-color: red; margin-top: 10px; border-radius: 20px; padding: 20px; font-size: 50px; color: red; font-weight: bold;">$1500 OFF
-              <br><span style="color: black; font-size: 20px; line-height: 10px; ">*Get each month $500 off for 3 months
-                when you sign in within June 30,
-                can&#39;t combine with other offer
-              </span></h3>
-         
+            <div class ="col-lg-6 mb-4  mt-3" style="text-align: center; background-color:#ffffff;  border-style: dashed;
+            border-width: 5px; border-color: red; margin: 10px; padding-top: 30px; padding-bottom: 30px;" > 
+            <h3 style=" margin: 10px; font-size: 50px; color: red; font-weight: bold; line-height: 50px;">$1500 OFF<h3></h3>
+              
+              
+              <br><p id="offer" style="color: black; font-size: 20px;">Get each month $500 off for 3 months <br>
+                when you sign in by June 30 2024, <br> <br>
+                <span style="font-size: 15px;">
+                  *Offer valid for Aster Care Home Inc.<br>
+Can&#39;t combine with other offer.
+                </span>
+              </p>
+            </div>
+            
           </div>
         </div>
 
@@ -742,80 +942,139 @@
     </section><!-- End Cta Section -->
 
 
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team" style="background-color: #e6e6e6">
+      <div class="container">
 
-
-
-
-
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up" style="position: relative;">
         <div class="section-title" data-aos="zoom-in">
-          <h3>Aster Care <span>Facilities</span></h3>
+          <h2>VISIT US</h2>
+          <h3>Our Care Home <span>Locations </span></h3>
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up">
+              <div class="member-img">
+                <img src="assets/img/images/loactio-1.jpg" class="img-fluid" alt="">
+
+              </div>
+              <div class="member-info">
+                <h4>Aster Care Home</h4>
+                <span style="color: black;">
+                  1524 37 St W<br>
+Saskatoon, S7L 4E1<br><br>
+                  This lovely care home located in desirable Westview neighbourhood, quick access off Circle Drive. It features everything from Large, bright bedrooms with private bathrooms to spacious living areas for comfortable living.</span>
+              </div>
+              <div class="center-container mb-4"  data-aos="zoom-in">
+                <a href="#" class="btn-get-started" style="text-align: center;">More Details</a>
+            </div>
+            </div>
+
+
           </div>
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <div class="about-img">
-              <img src="assets/img/images/gallery (3).jpg" alt="">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/images/location-2.jpg" class="img-fluid" alt="">
+
+              </div>
+              <div class="member-info">
+                <h4>Saskatoon Shine Care Home East</h4>
+                <span style="color: black;">
+                  307 Fast Court<br>
+Saskatoon, S7W 0C2<br><br>
+                  This charming care home is situated at the Aspen Ridge, a residential area which is known as a quiet and safe neighbourhood. Large bedrooms with private bathroom and common areas make senior living easy.</span>
+              </div>
+              <div class="center-container mb-4"  data-aos="zoom-in">
+                <a href="#" class="btn-get-started" style="text-align: center;">More Details</a>
+            </div>
             </div>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <ul>
-              <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Safe &amp; secured property</li>
-              <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Single room with private ensuite</li>
-              <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Walk-in safety Bathtub</li>
-              <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Covered deck/patio</li>
-              <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Garden/lawn area</li>
-              <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Central air conditioning</li>
-              <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Cable TV in each bedroom</li>
-              <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Telephone facility in each bedroom</li>
-              <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Walk-in safety Bathtub</li>
-            </ul>
 
-          </div>
+        
+
+
+
         </div>
-<br><br><br>
-<div class="row">
-  <div class="col-lg-6 order-1 order-lg-1" data-aos="zoom-in" data-aos-delay="100">
-    <div class="about-img">
-      <img src="assets/img/images/gallery (5).jpg" alt="">
-    </div>
-  </div>
-  <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-2 content">
-    <ul>
-      <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Unlimited WiFi</li>
-      <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Surveillance Camera</li>
-      <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Wheelchair accessibility</li>
-      <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Elevator</li>
-      <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Caregiver Call Button Pager System for
-        each resident</li>
-      <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Google Alarm System</li>
-      <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Door Security</li>
-      <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Fire alarm system and fire wall</li>
-    </ul>
 
-  </div>
-</div>
-<div class="center-container  mt-4 "  data-aos="zoom-in">
-  <a href="#about" class="btn-get-started scrollto">Learn More About Facilities</a>
-</div>
       </div>
+    </section><!-- End Team Section -->
 
 
+        <!-- ======= Services Section ======= -->
+        <section id="SERVICES" class="SERVICES" style="margin-top: 0px; background-color: #f5f5f5;">
+          <div class="container" data-aos="fade-up">
+            <div class="section-title">
+              <div class="section-title" data-aos="zoom-in">
+                <h3>Aster Care <span>Facilities</span></h3>
+                <p style="text-align: center;">From the moment you walk through our doors, you will discover a warm, welcoming &amp; loving environment. The bright,
 
-    </section><!-- End About Section -->
+                  comfortable bedrooms and living areas are all easily accessible by wheelchair.<br><br>
+                  
+                  We strive to differentiate from existing Personal Care Home models in terms of facility layout, interior &amp; exterior
+                  
+                  design and methods of service delivery.</p>
+                </div>
+            </div>
+            <div class="row gy-5">
+    
+              <div class="col-lg-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="SERVICES-item">
+                  <div class="img">
+                    <img src="assets/img/images/gallery (3).jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="details position-relative" style="background-color: white; opacity: 1;  box-shadow: 0 4px 8px 0 rgba(201, 201, 201, 0.2), 0 6px 20px 0 rgba(202, 202, 202, 0.1);">
+                      <ul>
+                        <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Safe &amp; secured property</li>
+                        <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Single room with private ensuite</li>
+                        <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Walk-in safety Bathtub</li>
+                        <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Cable TV in each bedroom</li>
+                        <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Telephone facility in each bedroom</li>
+                        <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Unlimited WiFi</li>
+                        <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Caregiver Call Button Pager System for
+                          each resident</li>
+                      </ul>
+          
+                  </div>
+                </div>
+              </div><!-- Location -->
+    
+              <div class="col-lg-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="SERVICES-item">
+                  <div class="img">
+                    <img src="assets/img/images/gallery (5).jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="details position-relative" style="background-color: white; opacity: 1; box-shadow: 0 4px 8px 0 rgba(201, 201, 201, 0.2), 0 6px 20px 0 rgba(202, 202, 202, 0.1); ">
+                   
+                    <ul>
+                      <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Elevator</li>
+                      <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Surveillance Camera</li>
+                      <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Wheelchair accessibility</li>
+                      <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Central air conditioning</li>
+                      <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Covered deck/patio</li>
+                      <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Fire alarm system and fire wall</li>
+                      <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Door Security</li>
+                      <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Google Alarm System</li>
+                      <li style="font-size: 20px;"><i class="bi bi-check-circle"></i> Garden/lawn area</li>
 
-
-
-
-
-
-
-
-
-
-
+                    </ul>
+    
+                  </div>
+                </div>
+              </div><!-- location -->
+    
+    
+            </div>
+    
+          </div>
+          <div class="container position-relative text-center" data-aos="zoom-in" data-aos-delay="100">
+            <div class="center-container  mt-4 "  data-aos="zoom-in">
+              <a href="#" class="btn-get-started">Learn More About Facilities</a>
+            </div>
+          </div>
+        </section><!-- End Services Section -->
 
 
 
@@ -895,6 +1154,9 @@
               <div class="swiper-pagination"></div>
             </div>
     
+            <div class="center-container  mt-4 mb-4 "  data-aos="zoom-in">
+              <a href="#" class="btn-get-started">View More Reviews</a>
+            </div>
           </div>
         </section><!-- End Testimonials Section -->
 
@@ -912,83 +1174,8 @@
 
 
 
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team" style="background-color: #f5f5f5;">
-      <div class="container">
-
-        <div class="section-title" data-aos="zoom-in">
-          <h2>VISIT US</h2>
-          <h3>Our Care Home <span>Locations </span></h3>
-        </div>
-
-        <div class="row justify-content-center">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up">
-              <div class="member-img">
-                <img src="assets/img/images/loactio-1.jpg" class="img-fluid" alt="">
-
-              </div>
-              <div class="member-info">
-                <h4>Aster Care Home</h4>
-                <span>
-                  This lovely care home located in desirable Westview neighbourhood, quick access off Circle Drive. It features everything from Large, bright bedrooms with private bathrooms to spacious living areas for comfortable living.</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="member-img">
-                <img src="assets/img/images/location-2.jpg" class="img-fluid" alt="">
-
-              </div>
-              <div class="member-info">
-                <h4>Saskatoon Shine Care Home East</h4>
-                <span>
-                  This charming care home is situated at the Aspen Ridge, a residential area which is known as a quiet and safe neighbourhood. Large bedrooms with private bathroom and common areas make senior living easy.</span>
-              </div>
-            </div>
-          </div>
-
-        
 
 
-
-        </div>
-
-      </div>
-    </section><!-- End Team Section -->
-
-<!-- ======= Get involved ======= -->
-<section id="CTA" class="CTA">
-  <div class="container" data-aos="fade-up" >
-    <div class="row g-5" style="padding-bottom: 0px;">
-      <div class="col-lg-8 col-md-6 content d-flex flex-column  order-last order-md-first" style="margin-bottom: 0px;">
-        <div class="section-title" data-aos="zoom-in" style="text-align: start;">
-          <h2 style="padding-left:  0px;">GET INVOLVED</h2>
-          <h3>Want to Join Our Growing Team? <span>Let's Connect</span></h3>
-        </div>      
-        <p>Aster Care Home provides compassionate care to
-          Seniors. Becoming an Aster care Team member isn’t
-          just a job. It’s a calling to serve others.  We are always
-          looking for caring, compassionate people who want to
-          bring our mission to make a difference to seniors.
-          Participate in volunteer or be a valuable member of
-          our team!</p>
-
-          <div class="btns" style="margin-top: 0px;">
-            <a href="#about" class="btn-get-started scrollto">Career</a>
-            <a href="#about" class="btn-get-started scrollto">Volunteer</a>
-          </div>
-      </div>
-      <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
-          <img src="assets/img/images/volunteer.jpg" alt="" class="img-fluid">
-      </div>
-    </div>
-
-  </div>
-</section><!-- End Call To Action Section -->
 
 
 
@@ -999,10 +1186,17 @@
 
       <!--  Section Title -->
       <div class="section-title" data-aos="zoom-in">
-        <h2>GET IN TOUCH</h2>
-        <h3>We'd Love TO Hear <span>From You! </span></h3>
+        <h3>Get In <span>Touch</span></h3>
+        <h4 style="font-weight: bold;">We'd Love TO Hear From You!</h4>
       </div>
 
+    
+        <img style="  display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%; padding-bottom: 30px;" data-aos="zoom-in" src="assets/img/images/Contact.jfif" alt="Contact Image">
+    
+      
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
@@ -1014,7 +1208,7 @@
 
               <div class="col-md-12">
                 <div class="info-item" data-aos="fade-right" data-aos-delay="300">
-                  <i class="bi bi-telephone"></i>
+                  <i class="bi bi-telephone-fill"></i>
                   <h3>Call Us</h3>
                   <p>306-881-7322</p>
                 </div>
@@ -1024,7 +1218,17 @@
 
               <div class="col-md-12">
                 <div class="info-item" data-aos="fade-right" data-aos-delay="300">
-                  <i class="bi bi-envelope"></i>
+                  <i class="bi bi-chat-dots-fill"></i>
+                  <h3>Text Us</h3>
+                  <p>306-881-7322</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              
+
+              <div class="col-md-12">
+                <div class="info-item" data-aos="fade-right" data-aos-delay="300">
+                  <i class="bi bi-envelope-fill"></i>
                   <h3>Email Us</h3>
                   <p>astercare123@gmail.com</p>
                 </div>
@@ -1058,6 +1262,8 @@
                     <button class="btn-get-started" type="submit">Send Message</button>
 
                   </div>
+                  <p style="margin-top: 10px; color: rgb(190, 187, 187);">We reply same or next business day</p>
+
                 </div>
 
               </div>
@@ -1069,6 +1275,39 @@
       </div>
 
     </section><!-- End Contact Section -->
+
+
+    <!-- ======= Get involved ======= -->
+<section id="CTA" class="CTA">
+  <div class="container" data-aos="fade-up" >
+    <div class="row g-5" style="padding-bottom: 0px;">
+      <div class="col-lg-8 col-md-6 content d-flex flex-column  order-last order-md-first" style="margin-bottom: 0px; padding: 30px; background-color: #ffffff;">
+        <div class="section-title" data-aos="zoom-in" style="text-align: start;">
+          <h3 style="text-align: center;">Get <span>Involved</span></h3>
+        </div>      
+        <p>Aster Care Home provides compassionate care to
+          Seniors. Becoming an Aster care Team member isn’t
+          just a job. It’s a calling to serve others.  We are always
+          looking for caring, compassionate people who want to
+          bring our mission to make a difference to seniors.
+          Participate in volunteer or be a valuable member of
+          our team!</p>
+
+          <h4 style="text-align: center; font-weight: bold;">Want to Join Our Growing Team? <span>Let's Connect</span></h4>
+
+
+          <div class="btns " style="margin-top: 0px; text-align: center;">
+            <a href="#" class="btn-get-started ">Career</a>
+            <a href="#" class="btn-get-started ">Volunteer</a>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
+          <img src="assets/img/images/volunteer.jpg" alt="" class="img-fluid">
+      </div>
+    </div>
+
+  </div>
+</section><!-- End Call To Action Section -->
 
   </main><!-- End #main -->
 
@@ -1136,11 +1375,11 @@
     </div>
 
     <div class="container">
-      <div class="copyright">
-        Copyright © 2023 Aster Care Home Inc | All Rights Reserved
+      <div class="copyright" style="display: flex; justify-content: space-between;">
+        <p>Copyright © 2023 Aster Care Home Inc | All Rights Reserved</p>
+        <p>Designed and Developed by Amatun Noor</p>
       </div>
-
-    </div>
+      
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

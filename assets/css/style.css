@@ -468,13 +468,13 @@ h6 {
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 1px;
-  display: inline-block;
   padding: 8px 28px;
   border-radius: 5px;
   transition: 0.5s;
-  margin: 10px;
   background-color: #ee8700;
   color: white;
+  display: flex;
+  align-items: center;
 }
 
 #hero .btn-get-started:hover {
@@ -505,6 +505,60 @@ h6 {
     margin-bottom: 30px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#hero .btn-get-started:hover {
+  background: #d07600;
+  color: white;
+  
+}
+
+#hero .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 10px;
+  text-transform: none;
+  background-color: #ee8700;
+  color: white;
+  top:50%;
+  left: 50%;
+}
+
+
+
+
+#hero span {
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+#hero i{
+  margin: 0px;
+  padding: 0px;
+}
+
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -622,26 +676,26 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(37, 37, 37, 0.9)), url("../img/images/money.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(37, 37, 37, 0.9)), url("../img/images/MONEY\ \(2\).jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
 
-.cta h3 {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-}
+
 
 
 
 @media (max-width: 768px) {
 
   .cta{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  .cta p {
+
+  #cta #offer{
+    font-size: 30px;
+  }
+  #cta p {
     font-size: 32px;
   }
 
@@ -966,6 +1020,29 @@ section {
   bottom: 15px;
 }
 
+#team .btn-get-started:hover {
+  background: #d07600;
+  color: white;
+  
+}
+
+#team .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 10px;
+  text-transform: none;
+  background-color: #ee8700;
+  color: white;
+  top:50%;
+  left: 50%;
+}
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -1047,7 +1124,28 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #00a7e1;
 }
+#testimonials .btn-get-started:hover {
+  background: #d07600;
+  color: white;
+  
+}
 
+#testimonials .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 10px;
+  text-transform: none;
+  background-color: #ee8700;
+  color: white;
+  top:50%;
+  left: 50%;
+}
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
@@ -1258,11 +1356,11 @@ section {
 ------------------------------*/
 .contact .info-item {
   background: #ffffff;
-  padding: 30px;
+  padding: 10px;
 }
 
 .contact .info-item i {
-  font-size: 38px;
+  font-size: 20px;
   font-weight: bold;
   line-height: 0;
   color: #ee8700;
@@ -1571,9 +1669,11 @@ section {
 }
 
 #footer .copyright {
-  text-align: center;
+  text-align: start;
   padding-top: 30px;
 }
+
+
 
 #footer .credits {
   padding-top: 10px;
